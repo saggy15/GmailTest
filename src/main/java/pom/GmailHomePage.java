@@ -17,7 +17,7 @@ public class GmailHomePage {
 	WebDriver driver;
 
 	@FindBy(xpath="//div[@class='T-I T-I-KE L3']")private WebElement composeButton;
-	@FindBy(xpath="//input[@id=':bs']")private WebElement tofield;
+	@FindBy(xpath="//input[@class='agP aFw']")private WebElement tofield;
 	@FindBy(xpath="//span[@id=':5d']")private WebElement clickccfield;
 	@FindBy(xpath="(//input[@class='agP aFw'])[2]")private WebElement ccfield;
 	@FindBy(xpath="//span[@class='baT']")private WebElement clickBccfield;
