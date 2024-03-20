@@ -50,6 +50,7 @@ public void EnterloginPageDetails() throws InterruptedException, IOException
  {
 	hp.entersubject();
 	hp.enterTextbody();
+	hp.ClickOnSendButton();
 	
 }
 

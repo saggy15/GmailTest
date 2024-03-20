@@ -27,6 +27,8 @@ public class GmailHomePage {
 	@FindBy(xpath="//a[@class='gb_d gb_Fa gb_J']")private WebElement mButtom;
 	@FindBy(xpath="//a[@class='V5tzAf jFfZdd Dn5Ezd']")private WebElement signoutButton;
 	@FindBy(xpath="(//iframe[@role='presentation'])[3]")private WebElement iframe;
+	@FindBy(xpath="//div[@id=':7w']")private WebElement sendButton;
+	
 	public GmailHomePage(WebDriver driver)
 	{
 		this.driver=driver;
@@ -40,7 +42,7 @@ public class GmailHomePage {
 	}
 	public void enterTofield() throws InterruptedException, IOException
 	{
-		Utility.waitTime(3000);
+		Utility.waitTime(4000);
 		tofield.sendKeys(Utility.getProperty("Tofield"));
 		Reporter.log("Entering email into To field ", true);
 		
@@ -90,9 +92,14 @@ public class GmailHomePage {
 		Reporter.log("Entering body text ", true);
 		Utility.waitTime(2000);
 	}
+	public void ClickOnSendButton() throws InterruptedException
+	{
+		sendButton.click();
+		Reporter.log("Sending mail", true);
+		Utility.waitTime(3000);
+	}
 	
 	public void clickOnmButton() throws InterruptedException
-	
 	{
 		Utility.waitTime(1500);
 		mButtom.click();
@@ -104,7 +111,7 @@ public class GmailHomePage {
 		driver.switchTo().frame(iframe);
 		signoutButton.click();
 		Reporter.log("Signing out Gmail", true);
-		Utility.waitTime(5000);
+		Utility.waitTime(5500);
 	}
 	
 	
