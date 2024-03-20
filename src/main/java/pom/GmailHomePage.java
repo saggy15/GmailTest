@@ -18,7 +18,7 @@ public class GmailHomePage {
 
 	@FindBy(xpath="//div[@class='T-I T-I-KE L3']")private WebElement composeButton;
 	@FindBy(xpath="//input[@class='agP aFw']")private WebElement tofield;
-	@FindBy(xpath="//span[@id=':5d']")private WebElement clickccfield;
+	@FindBy(xpath="//span[@class='aB gQ pE']")private WebElement clickccfield;
 	@FindBy(xpath="(//input[@class='agP aFw'])[2]")private WebElement ccfield;
 	@FindBy(xpath="//span[@class='baT']")private WebElement clickBccfield;
 	@FindBy(xpath="(//input[@class='agP aFw'])[3]")private WebElement Bccfield;
@@ -27,7 +27,7 @@ public class GmailHomePage {
 	@FindBy(xpath="//a[@class='gb_d gb_Fa gb_J']")private WebElement mButtom;
 	@FindBy(xpath="//a[@class='V5tzAf jFfZdd Dn5Ezd']")private WebElement signoutButton;
 	@FindBy(xpath="(//iframe[@role='presentation'])[3]")private WebElement iframe;
-	@FindBy(xpath="//div[@id=':7w']")private WebElement sendButton;
+	@FindBy(xpath="//div[text()='Send']")private WebElement sendButton;
 	
 	public GmailHomePage(WebDriver driver)
 	{
