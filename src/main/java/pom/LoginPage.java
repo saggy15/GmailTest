@@ -19,7 +19,7 @@ import util.Utility;
 public class LoginPage  {
 	
 	WebDriver driver;
-	
+
 	
 	@FindBy(xpath="//*[@id=\"identifierId\"]")private WebElement email;
 	@FindBy(xpath="//span[text()='Next']")private WebElement nextButton;

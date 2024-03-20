@@ -36,7 +36,7 @@ public class GmailHomePage {
 	}
 	public void clickOnComposeButton() throws InterruptedException
 	{
-		Utility.waitTime(3000);
+		Utility.waitTime(4000);
 		composeButton.click();
 		Reporter.log("Clicking on Compose button", true);
 	}
